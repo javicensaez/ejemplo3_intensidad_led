@@ -33,7 +33,7 @@ int main()
         //Lo mismo de otra forma
         valorPotUInt=pot.read_u16(); //Este metodo da un valor entre 0 y (2^16)-1
         float duty=valorPotUInt/65536.0; // El ciclo de trabajo es un valor entre 0 y 1
-        led1.write(duty); //Cambia el ciclo de trabajo de la salida
+        led1.write(duty); //Cambia el ciclo de trabajo de la salida 
         thread_sleep_for(WAIT_TIME_MS);
     }
 }
